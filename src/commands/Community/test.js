@@ -7,3 +7,10 @@ module.exports = {
         await interaction.reply({ content: 'The bot is working'});
     }
 }
+
+client.on('message', message=>{
+    console.log(message.content);
+    if(message.content === 'hi'){
+        message.channel.send('hi ya5oia')
+    }
+});
